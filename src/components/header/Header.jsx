@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
 import amazonLogo from '../../assets/Amazon.png';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -8,7 +9,9 @@ const Header = () => {
         <div>
             <div className="header__container">
                 <div className="header__logo">
+                    <Link to='/'>
                     <img src={amazonLogo} alt="Amazon Logo" />
+                     </Link>
                 </div>
                 <div className="header__search">
                     <i className="uil uil-search icon"></i>
@@ -28,7 +31,9 @@ const Header = () => {
                         <span className="header__options">Prime</span>
                     </div>
                     <div className=""></div>
+                    
                     <i className="uil uil-shopping-cart icon cart__icon"></i> 
+                    
                     <span className="header__count">0</span>
                 </div>
                 <div className="header__option">

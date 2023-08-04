@@ -3,6 +3,8 @@
  import BackgroudSlide1 from '../../assets/homeBackground.jpg';
  import Product from '../product/Product';
  import productImg1 from '../../assets/Alexa.jpg';
+ import {TopSelling, LikedProducts, LastSeen} from '../Data/Data';
+
 
  const Home = () => {
     return (
@@ -11,22 +13,43 @@
                 <img className='home__img'src={BackgroudSlide1} alt="" />
             </div>
             <div className="home__row">
-                <Product 
-                id = "123456"
-                title='Amazon Alexa speaker for your home'
-                price='99.99'
-                rating= {2}
+           { TopSelling.map((items) =>{
+           return(
+            <Product 
+               id = {items.id}
+               title={items.title}
+               price={items.price}
+               rating= {items.rating}
+               image = {productImg1}
+            />
+           )
+            })}
+            </div>
+            <div className="home__row">
+            {LikedProducts.map((items) =>{
+            return(
+            <Product
+                id = {items.id}
+                title={items.title}
+                price={items.price}
+                rating= {items.rating}
                 image = {productImg1}
-                />
-                <Product />
+            />
+                )
+            })}
             </div>
             <div className="home__row">
-            <Product />
-            <Product />
-            <Product />
-            </div>
-            <div className="home__row">
-            <Product />
+                {LastSeen.map((items) =>{
+                return(
+                    <Product 
+                    id = {items.id}
+                    title={items.title}
+                    price={items.price}
+                    rating= {items.rating}
+                    image = {productImg1}
+                    />
+                )
+                })}
             </div>
             
         </div>
