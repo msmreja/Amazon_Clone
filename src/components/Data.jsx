@@ -1,1 +1,0 @@
-import AmazonLogo from '../assets/Amazon.png'

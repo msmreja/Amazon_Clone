@@ -2,9 +2,15 @@ import React from 'react';
 import './header.css';
 import amazonLogo from '../../assets/Amazon.png';
 import { Link } from 'react-router-dom';
+import { useStateValue } from '../contextApi/StateProvider';
 
 
 const Header = () => {
+
+    const [{ basket, user }, dispatch] = useStateValue();
+
+    console.log("This is basket"+ JSON.stringify(basket))
+
     return (
         <div>
             <div className="header__container">
@@ -34,7 +40,7 @@ const Header = () => {
                     
                     <i className="uil uil-shopping-cart icon cart__icon"></i> 
                     
-                    <span className="header__count">0</span>
+                    <span className="header__count">{basket?.length}</span>
                 </div>
                 <div className="header__option">
                 </div>

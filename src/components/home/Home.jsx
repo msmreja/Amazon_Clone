@@ -15,39 +15,48 @@
             <div className="home__row">
            { TopSelling.map((items) =>{
            return(
+            <div className="single__product">
             <Product 
-               id = {items.id}
-               title={items.title}
-               price={items.price}
-               rating= {items.rating}
-               image = {productImg1}
-            />
-           )
-            })}
-            </div>
-            <div className="home__row">
-            {LikedProducts.map((items) =>{
-            return(
-            <Product
+                key={items.id}
                 id = {items.id}
                 title={items.title}
                 price={items.price}
                 rating= {items.rating}
                 image = {productImg1}
             />
+            </div>
+           )
+            })}
+            </div>
+            <div className="home__row">
+            {LikedProducts.map((items) =>{
+            return(
+            <div className="single__product">    
+            <Product
+                key={items.id}
+                id = {items.id}
+                title={items.title}
+                price={items.price}
+                rating= {items.rating}
+                image = {productImg1}
+                />
+                </div>
                 )
             })}
             </div>
             <div className="home__row">
                 {LastSeen.map((items) =>{
                 return(
+                    <div className="single__product">
                     <Product 
+                    key={items.id}
                     id = {items.id}
                     title={items.title}
                     price={items.price}
                     rating= {items.rating}
                     image = {productImg1}
                     />
+                    </div>
                 )
                 })}
             </div>

@@ -1,5 +1,5 @@
 export const TopSelling = [{
-    id: 12345,
+    id: 12341,
     title: 'Amazon Alexa Spaker For Your Home',
     img: '',
     description: '',
@@ -7,8 +7,8 @@ export const TopSelling = [{
     price: 99.99
 },
 {
-    id: 12345,
-    title: 'Amazon Alexa Spaker For Your Home',
+    id: 12342,
+    title: 'An apple mobile which is nothing like apple',
     img: '',
     description: '',
     rating: 4,
@@ -16,7 +16,7 @@ export const TopSelling = [{
 }];
 
 export const LikedProducts =[{
-    id: 12345,
+    id: 12343,
     title: 'Amazon Alexa Spaker For Your Home',
     img: '',
     description: '',
@@ -24,7 +24,7 @@ export const LikedProducts =[{
     price: 99.99
 },
 {
-    id: 12345,
+    id: 12344,
     title: 'Amazon Alexa Spaker For Your Home',
     img: '',
     description: '',
@@ -42,7 +42,7 @@ export const LikedProducts =[{
 ]
 
 export const LastSeen =[{
-    id: 12345,
+    id: 12346,
     title: 'Amazon Alexa Spaker For Your Home',
     img: '',
     description: '',
