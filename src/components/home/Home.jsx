@@ -28,6 +28,7 @@
            )
             })}
             </div>
+
             <div className="home__row">
             {LikedProducts.map((items) =>{
             return(
@@ -44,6 +45,7 @@
                 )
             })}
             </div>
+            
             <div className="home__row">
                 {LastSeen.map((items) =>{
                 return(

@@ -15,7 +15,7 @@ const reducer = (state, action) => {
         case 'ADD_TO_CART':
             return{
                 ...state,
-                basket: [...state.basket, action.items],
+                basket: [...state.basket, action.item],
             };
         default:
             return state;

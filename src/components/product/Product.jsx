@@ -8,7 +8,7 @@ const Product = ({ id, title, price, rating, image }) => {
 
 
     const addToCart = () => {
-        console.log('Called');
+        console.log('Cart->'+ basket);
         dispatch ({
             type: 'ADD_TO_CART',
             item:{

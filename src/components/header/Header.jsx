@@ -6,10 +6,7 @@ import { useStateValue } from '../contextApi/StateProvider';
 
 
 const Header = () => {
-
     const [{ basket, user }, dispatch] = useStateValue();
-
-    console.log("This is basket"+ JSON.stringify(basket))
 
     return (
         <div>
